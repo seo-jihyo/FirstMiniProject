@@ -225,17 +225,16 @@ public class Waiting extends JFrame implements ActionListener {
 				if (result == null) {
 					JOptionPane.showMessageDialog(null, "연락처를 입력하세요.");
 				} else if (result.length() != 11) {
-					JOptionPane.showMessageDialog(null, "11글자로 입력하세요.");
+					JOptionPane.showMessageDialog(null, "올바른 휴대폰 번호를 입력하세요.");
 				} else {
 					try {
 						new Inwon();
 					} catch (Exception e2) {
-
+						e2.printStackTrace();
 					}
 				}
 			}
 		});
-
 	}
 
 	@Override

@@ -174,20 +174,18 @@ public class Inwon extends JFrame implements ActionListener {
 				try {
 					int people = Integer.parseInt(result);
 					System.out.println("people: " + people);
-					System.out.println("phone: ---------" + Waiting.result);
+					System.out.println("phone: " + Waiting.result);
 					wc.insert(Waiting.result, people);
 					wc.selectWait2(Waiting.textinwon);
 					
 					JOptionPane.showMessageDialog(null, "예약이 완료되었습니다.");
 
-					dispose();
+					dispose(); 
 				} catch (Exception e2) {
 					e2.printStackTrace();
 				}
-
 			}
 		});
-
 	}
 
 	@Override

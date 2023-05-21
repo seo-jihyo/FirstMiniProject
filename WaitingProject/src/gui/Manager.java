@@ -86,7 +86,7 @@ public class Manager extends JFrame {
 		rvdata.setBounds(45, 59, 665, 280);
 		contentPane.add(rvdata);
 
-		// 테이블 바을 선택했을 때 마우스 액션
+		// 테이블 바를 선택했을 때 마우스 액션
 		table2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {

@@ -81,6 +81,7 @@ public class Login extends JFrame {
 		contentPane.add(pwLabel);
 
 		setVisible(true);
+		
 		// 로그인 버튼 액션
 		login.addActionListener(new ActionListener() {
 

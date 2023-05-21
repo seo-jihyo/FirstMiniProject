@@ -10,8 +10,8 @@ public class ConnectionHelper {
 		try {
 
 			Class.forName("oracle.jdbc.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "jj", "oracle");
-//				System.out.println("oracle connection success!!!");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "scott", "tiger");
+				System.out.println("oracle connection success!!!");
 
 		} catch (Exception e) {
 			e.printStackTrace();
